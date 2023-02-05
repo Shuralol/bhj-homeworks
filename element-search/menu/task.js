@@ -6,11 +6,7 @@ clickEl.forEach((item) => {
     const ul = li.querySelector("ul");
     if (ul) {
       event.preventDefault();
-      if (ul.classList.contains("menu_active")) {
-        ul.classList.remove("menu_active");
-      } else {
-        ul.classList.add("menu_active");
-      }
+      ul.classList.toggle("menu_active");
     }
   });
 });
