@@ -12,16 +12,16 @@ next.forEach((item, index) => {
 });
 
 function sliderNext(arrow) {
-  let index = img.findIndex((item) => item.classList.contains("slider__item_active") === true);
+  let index = img.findIndex(
+    (item) => item.classList.contains("slider__item_active") === true
+  );
   img[index].classList.remove("slider__item_active");
-  if(arrow === "next") {
-   index === img.length -1 ? index = 0 : index++;
-   img[index].classList.add("slider__item_active");
-} 
-if(arrow === "prev") {
-    index === 0 ? index = img.length -1 : index--;
-    img[index].classList.add("slider__item_active");
- }; 
-};
-
-
+  if (arrow === "next") {
+    index === img.length - 1 ? (index = 0) : index++;
+    /* img[index].classList.add("slider__item_active"); */
+  }
+  if (arrow === "prev") {
+    index === 0 ? (index = img.length - 1) : index--;
+  }
+  img[index].classList.add("slider__item_active");
+}
