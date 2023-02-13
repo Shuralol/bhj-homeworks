@@ -5,7 +5,7 @@ clickEl.forEach((item) => {
     const li = event.target.closest("li");
     /* console.log(li) */
     const ul = li.querySelector("ul");
-    console.log(ul)
+    console.log(ul);
     if (ul) {
       event.preventDefault();
       ul.classList.toggle("menu_active");
