@@ -10,31 +10,3 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* div.forEach((item) => {
-  item.addEventListener("scroll", () => {
-    item.addEventListener.window.innerHeight()
-  });
-});
- */
-/* function isVisible(el) {
-  const { top, bottom } = el.getBoundingClientRect();
-
-  if (bottom <0 ) {
-    div.classList.remove("reveal_active");
-  }
-
-  if (top > window.innerHeight) {
-    div.classList.add("reveal_active");
-  }
-}
-
-setInterval(() => {
-  console.log(isVisible(div));
-}, 1000);
- */
-
-/* setInterval(() => {
-  const { top, bottom } = div.getBoundingClientRect();
-  console.log(top, bottom);
-  div.classList.add("reveal_active");
-}, 1000); */
