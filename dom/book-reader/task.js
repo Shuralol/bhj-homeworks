@@ -10,7 +10,7 @@ arrLinkSize.forEach((item) => {
       elem.classList.remove("font-size_active");
     });
     item.classList.add("font-size_active");
-
+    const zzz = book.classList.value.split(" ")
     const arrList = book.classList.value.split(" ");
     arrList.forEach((elem) => {
       if (elem.includes("book_fs")) {
