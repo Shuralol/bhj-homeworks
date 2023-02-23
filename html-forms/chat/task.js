@@ -14,7 +14,7 @@ console.log(aaa);
 zzz.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     aaa.innerHTML += `<div class="message message_client">
-    <div class="message__time">21:10</div>
+    <div class="message__time">${time}</div>
     <div class="message__text">${zzz.value}</div>
 </div>`;
     zzz.value = "";
@@ -22,7 +22,7 @@ zzz.addEventListener("keydown", function (event) {
 
     aaa.innerHTML += `
   <div class="message">
-    <div class="message__time">09:21</div>
+    <div class="message__time">${time}</div>
     <div class="message__text">
     ${arrABV(arr)}
     </div>
@@ -49,10 +49,5 @@ function arrABV(arr) {
   return rValue;
 }
 
-const currentDate = new Date();
-
-/* const options = {
-  hour: 'numeric', minute: 'numeric', 
-   
-}  */
-console.log(currentDate);
+let time = new Date().toLocaleTimeString().slice(0, -3);
+console.log(Date());
