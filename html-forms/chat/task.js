@@ -12,7 +12,7 @@ const aaa = document.getElementById("chat-widget__messages");
 console.log(aaa);
 
 zzz.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
+  if (event.key === "Enter" && zzz.value.trim()) {
     aaa.innerHTML += `<div class="message message_client">
     <div class="message__time">${time}</div>
     <div class="message__text">${zzz.value}</div>
